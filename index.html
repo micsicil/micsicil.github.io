@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Zelda</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Zelda.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 450px; height: 385px"></div>
+      <div class="footer">
+        <div align="center"><h3>Controls</h3>
+            <p align="center"><kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> = Directions</p>
+            <p align="center"><kbd>X</kbd> = A</p>
+            <p align="center"><kbd>Z</kbd> = B</p>
+            <p align="center"><kbd>enter ↵</kbd> = Start</p>
+            <p align="center"><kbd>shift</kbd> = Select</p>
+            <p align="center"><kbd>1</kbd> = Invulnerability</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
